@@ -19,16 +19,14 @@ directives(Vue);
 fastclick.attach(document.body);
 
 Vue.config.productionTip = false;
-console.log(Vue.version);
 /* eslint-disable no-new */
-const OSystem = new Vue({
+new Vue({
   el: '#app',
   router,
   store,
   template: '<App/>',
   components: { App },
 });
-console.log(OSystem);
 
 // 主要通过afterEach钩子
 router.afterEach((to, from) => {
