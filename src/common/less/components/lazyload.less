@@ -1,0 +1,28 @@
+@import "../common/variables";
+
+.@{css-prefix} {
+    &-lazyBg {
+        background: url(../../../static/img/logo_default.png) no-repeat center center;
+        &-img{
+            width: 100%;
+            min-height: 1px;
+            opacity: 0;
+            transition: all 1s;
+            &-loaded{
+                opacity: 1;
+            }
+        }
+    }
+    &-lazy {
+        &-img{
+            width: 100%;
+            min-height: 1px;
+            opacity: 0;
+            transition: all 1s;
+            &-loaded{
+                opacity: 1;
+            }
+        }
+    }
+}
+

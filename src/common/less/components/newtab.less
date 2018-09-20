@@ -1,0 +1,28 @@
+@import "../common/variables";
+@import "../common/mixins";
+
+.@{css-prefix} {
+   &-newtab{
+       display: flex;
+       height: @navbar-height;
+       line-height: @navbar-height;
+       //font-size: 14px;
+
+       &-item{
+           flex: 1;
+           text-align: center;
+           &-link{
+               padding-bottom: 5px;
+               color: #333;
+           }
+       }
+
+       &-item.router-link-active{
+           .m-newtab-item-link{
+               color: @btn-danger-bg;
+               border-bottom: 2px solid @btn-danger-bg;
+           }
+       }
+   }
+
+}

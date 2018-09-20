@@ -1,0 +1,41 @@
+@import "../common/variables";
+@import "../common/mixins";
+
+@keyframes rotate {
+    0% {
+        transform: rotateZ(0deg);
+    }
+    100% {
+        transform: rotateZ(360deg);
+    }
+}
+.@{css-prefix} {
+    &-avatar-bar{
+        position: fixed;
+        left: 50%;
+        bottom: 0;
+        transform: translate3d(-50%,0,0);
+        width: 1.2rem;
+        height: 1.4rem;
+        border-top: 2px solid rgba(0,0,0,.2);
+        border-top-left-radius: 1rem;
+        border-top-right-radius: 1rem;
+        padding: .1rem;
+        z-index: 9999;
+    }
+    &-avatar-wrap{
+        border-radius: 50%;
+        width: 1rem;
+        height: 1rem;
+        border-bottom: 1px solid rgba(0,0,0,.2);
+        background-color: #fff;
+        overflow: hidden;
+        img{
+            width: 100%;
+        }
+    }
+    &-avatar-rotate{
+        animation: rotate 10s linear infinite;
+    }
+}
+

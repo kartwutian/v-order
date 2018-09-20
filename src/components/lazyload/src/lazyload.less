@@ -1,0 +1,30 @@
+@import "../../../common/less/utils";
+
+.@{css-prefix} {
+    &-lazyBg {
+        background: url(../../../assets/logo.png) no-repeat center center;
+        &-img {
+            width: 100%;
+            min-height: 1px;
+            min-width: 1px;
+            opacity: 0;
+            transition: all .3s;
+            &-loaded {
+                opacity: 1;
+            }
+        }
+    }
+    &-lazy {
+        &-img {
+            width: 100%;
+            min-height: 1px;
+            min-width: 1px;
+            opacity: 0;
+            transition: all .3s;
+            &-loaded {
+                opacity: 1;
+            }
+        }
+    }
+}
+

@@ -1,0 +1,20 @@
+@import "../common/variables";
+@import "../common/mixins";
+
+.@{css-prefix} {
+    &-backtop {
+        border: 1px solid #C0C0C0;
+        background-color: rgba(0,0,0,.2);
+        color: #fff;
+        width: .8rem;
+        height: .8rem;
+        position: fixed;
+        border-radius: 50%;
+        right: 5%;
+        bottom: 15%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: @base-zindex * 1000;
+    }
+}

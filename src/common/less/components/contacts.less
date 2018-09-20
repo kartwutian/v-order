@@ -1,0 +1,66 @@
+@import "../common/variables";
+@import "../common/mixins";
+
+.@{css-prefix} {
+    &-contacts-group {
+        padding-bottom: .6rem;
+    }
+    &-contacts-group-title {
+        height: .6rem;
+        line-height: .6rem;
+        padding-left: .4rem;
+        font-size: 12px;
+        color: @btn-warning-bg;
+        background: #efefef;
+    }
+    &-contacts-group-item {
+        display: flex;
+        align-items: center;
+        padding: .4rem 0 0 .6rem;
+
+        .avatar{
+            width: 1rem;
+            height: 1rem;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+        .name {
+            margin-left: .4rem;
+            color: #290909;
+            font-size: 14px;
+        }
+    }
+    &-contacts-shortcut{
+        position: fixed;
+        z-index: 30;
+        right: 0;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+        width: .4rem;
+        padding: .4rem 0;
+        border-radius: .2rem;
+        text-align: center;
+        font-family: Helvetica;
+        font-size: 14px;
+        color: #290909;
+        line-height: 1.4;
+        .current{
+            color: @btn-warning-bg;
+        }
+    }
+    &-contacts-nav{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        .fixed-title{
+            height: .6rem;
+            line-height: .6rem;
+            padding-left: .4rem;
+            font-size: 12px;
+            color: @btn-warning-bg;
+            background: #efefef;
+        }
+    }
+}
